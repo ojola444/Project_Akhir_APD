@@ -20,19 +20,27 @@ if __name__ == "__main__":
     while True:
         
         menu_dipilih = menu_multi_login()
-        if menu_dipilih == "1":
-            admin_login()
-            
-        elif menu_dipilih == "2":
-            menu_autentikasi_dipilih = menu_autentikasi_user()
-            
-            if menu_autentikasi_dipilih == "1":
-                user_login()
-            else:
-                user_regist()
+        match menu_dipilih:
+            case "1. Admin":
+                admin_login()
                 
-        else: 
-            break
+            case "2. User":
+                menu_autentikasi_user()
+                match menu_dipilih:
+                    case "1. Login":
+                        user_login()
+        
+                    case "2. Buat Akun Baru":
+                        user_regist()
+        
+                    case "3. Kembali":
+                        break
+            
+
+            case "3. Keluar":
+                break
+
+        
         
         
     print("=========PROGRAM BERAKHIR=========")

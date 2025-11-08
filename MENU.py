@@ -7,6 +7,7 @@ from CRUD.UPDATE import ubah_data_game
 from CRUD.DELETE import hapus_game
 
 
+
 def menu_multi_login():
     os.system("cls || clear")
     print("================(Selamat Datang di KukuStation)================\n")
@@ -21,14 +22,16 @@ def menu_multi_login():
                   ]
     
     menu_dipilih = inquirer.prompt(pilih_menu)
-    return menu_dipilih["Menu"][0]
+    return menu_dipilih["Menu"]
     
     
 
 def menu_crud_admin():
+    os.system("cls || clear")
     print("========= KUKUSTATION: JUAL BELI GAME ===========\n")
     print("Anda Login sebagai Admin, Silahkan pilih menu dibawah:")
     print("\n======================================================")
+    
     pilih_menu = [inquirer.List(
             "Menu",
             message="Pilih Menu",
@@ -43,26 +46,29 @@ def menu_crud_admin():
     menu_dipilih = inquirer.prompt(pilih_menu)["Menu"][0]
     print("======================================================")
     
+    
     while True:
-        
+            
         if menu_dipilih == "1":
             tambah_game()
-            
+
         elif menu_dipilih == "2":
             tampilkan_game()
-            
+
         elif menu_dipilih == "3":
             ubah_data_game()
-            
+
         elif menu_dipilih == "4":
             hapus_game()
-            
+
         elif menu_dipilih == "5":
             break
+        
     
     
 
 def menu_user():
+    os.system("cls || clear")
     print("========= KUKUSTATION: JUAL BELI GAME ===========\n")
     print("Anda Login sebagai User, Silahkan pilih menu dibawah:")
     pilih_menu = [inquirer.List(
@@ -91,7 +97,7 @@ def menu_user():
         pass
 
 def menu_autentikasi_user():
-    
+    os.system("cls || clear")
     pilih_menu = [inquirer.List(
             "Menu",
             message="Pilih Menu",
@@ -104,6 +110,9 @@ def menu_autentikasi_user():
         ]
     menu_dipilih = inquirer.prompt(pilih_menu)
     return menu_dipilih
+        
+        
+            
         
 
 def menu_akun_user():
