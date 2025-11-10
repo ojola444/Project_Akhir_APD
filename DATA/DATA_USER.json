@@ -3,6 +3,7 @@
         "username":"contoh",
         "password":"123",
         "PIN":202024,
+        "saldo": 0,
         "koleksi_game": []
     }
 }

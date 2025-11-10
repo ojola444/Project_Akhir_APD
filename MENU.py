@@ -122,8 +122,6 @@ def menu_autentikasi_user():
             
         
 
-def menu_akun_user():
-    pass
 
 
 
