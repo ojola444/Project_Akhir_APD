@@ -10,7 +10,7 @@ def tambah_game():
     path_json = folderUtama / "DATA" / "DATA_GAME.json"
 
     checkDup = 0
-    with open(path, "r") as file :
+    with open(path_json, "r") as file :
         game = json.load(file)
 
     try :
@@ -49,7 +49,7 @@ def tambah_game():
 
     game[f"A00{len(game) + 1}"] = gameBaru
 
-    with open(path, "w") as newValue :
+    with open(path_json, "w") as newValue :
        json.dump(game, newValue, indent=4)
     
     print("game berhasil dimasukkan")
@@ -69,5 +69,3 @@ def tambah_game():
 
     elif pilihan == "2" :
        return "keluar dari fitur tambah game"
-
-tambah_game()
