@@ -11,7 +11,7 @@ from TRANKSAKSI import beli_game,top_up
 
 
 def menu_multi_login():
-    os.system("cls || clear")
+
     print("================(Selamat Datang di KukuStation)================\n")
     pilih_menu = [inquirer.List(
         "Menu",
@@ -70,7 +70,7 @@ def menu_crud_admin():
     
     
 
-def menu_user():
+def menu_user(akun_saat_ini):
     while True:
         
         os.system("cls || clear")
@@ -87,17 +87,17 @@ def menu_user():
                     ]
                 )
             ]
-        menu_dipilih = inquirer.prompt(pilih_menu)
+        menu_dipilih = inquirer.prompt(pilih_menu)["Menu"]
         print("======================================================\n")
         match menu_dipilih:
             case "1. Beli Game":
-                beli_game()
+                beli_game(akun_saat_ini)
                 
             case "2. Info Akun":
                 pass
             
             case "3. Top Up":
-                top_up()
+                top_up(akun_saat_ini)
                 
             case "4. Log Out":
                 break

@@ -1,8 +1,22 @@
 {
     "U001": {
-        "username":"contoh",
-        "password":"123",
-        "PIN":202024,
+        "username": "contoh",
+        "password": "123",
+        "PIN": 202024,
+        "saldo": 0,
+        "koleksi_game": []
+    },
+    "U002": {
+        "username": "contoh2",
+        "password": "123",
+        "PIN": 202024,
+        "saldo": 0,
+        "koleksi_game": []
+    },
+    "U003": {
+        "username": "contoh3",
+        "password": "123",
+        "PIN": 202024,
         "saldo": 0,
         "koleksi_game": []
     }
