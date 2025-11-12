@@ -73,3 +73,5 @@ def tambah_game():
 =======
        return "keluar dari fitur tambah game"
 >>>>>>> c902dbc183e6fccc7efab3b5f512e31a0ef7a80a
+
+tambah_game()
