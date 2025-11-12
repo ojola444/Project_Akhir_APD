@@ -32,5 +32,5 @@ def tampilkan_game():
       print(fileGame[i]["judul_game"], end="") 
       print("=" * math.ceil(setengahLebar))
       print(table)
-
-tampilkan_game()
+      
+   kembali = input("Input Enter atau apa saja untuk kembali: ")
