@@ -40,7 +40,7 @@ def tambah_game():
     
     gameBaru = {
        "judul_game" : Nama_game,
-       "tahun rilis" : tanggal,
+       "tahun_rilis" : tanggal,
        "harga" : harga,
        "genre" : list_genre,
        "total_terjual" : 0,
@@ -69,5 +69,3 @@ def tambah_game():
 
     elif pilihan == "2" :
        return "keluar dari fitur tambah game"
-
-tambah_game()
