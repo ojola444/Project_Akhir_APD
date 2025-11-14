@@ -6,12 +6,13 @@ import inquirer
 from CRUD.READ import tampilkan_game
 
 def hapus_game():
-
+    
     lokasiFile = Path(__file__).resolve()
     folderSekarang = lokasiFile.parent
     folderUtama = folderSekarang.parent
     path_json = folderUtama / "DATA" / "DATA_GAME.json"
 
+    # Load data
     try:
         with open(path_json, "r") as file:
             games = json.load(file)
@@ -27,48 +28,32 @@ def hapus_game():
 
     tampilkan_game()
 
-    hapus_input = input("Masukkan nomor game yang ingin dihapus: ")
-    try:
-        nomor_tampil = int(hapus_input)
-        if 1 <= nomor_tampil <= len(game_keys):
-            key_asli = game_keys[nomor_tampil - 1]
-            game = games[key_asli]
 
-            print(f"\nKamu akan menghapus game: {game['judul_game']} ({game['tahun_rilis']} - {', '.join(game['genre'])})")
-            konfirmasi = inquirer.prompt([
-                inquirer.List("konfirmasi", message="Konfirmasi penghapusan", choices=["Ya", "Tidak"])
-            ])["konfirmasi"]
+    id_hapus = input("Masukkan ID game yang ingin dihapus (contoh: A001 DST.): ").upper()
 
-            if konfirmasi == "Ya":
-                del games[key_asli]
+    if id_hapus in games:
+        game = games[id_hapus]
+        print(f"\nKamu akan menghapus game: {game['judul_game']} ({game['tahun_rilis']} - {', '.join(game['genre'])})")
+        konfirmasi = inquirer.prompt([
+            inquirer.List("konfirmasi", message="Konfirmasi penghapusan", choices=["Ya", "Tidak"])
+        ])["konfirmasi"]
 
-                games_baru = {}
-                for i, data in enumerate(games.values(), start=1):
-                    id_baru = f"A{str(i).zfill(3)}"
-                    games_baru[id_baru] = data
+        if konfirmasi == "Ya":
+            del games[id_hapus]
 
-                # Simpan ke JSON
-                with open(path_json, "w") as file:
-                    json.dump(games_baru, file, indent=4)
+            games_baru = {}
+            for i, data in enumerate(games.values(), start=1):
+                id_baru = f"A{str(i).zfill(3)}"
+                games_baru[id_baru] = data
 
-                sleep(1)
-                os.system('cls')
-                print("Game berhasil dihapus dan ID diurutkan ulang.")
-                sleep(1)
-            else:
-                print("Penghapusan dibatalkan.")
+            with open(path_json, "w") as file:
+                json.dump(games_baru, file, indent=4)
+
+            sleep(1)
+            os.system('cls')
+            print("Game berhasil dihapus.")
+            sleep(1)
         else:
-            print("Nomor game tidak ditemukan.")
-    except:
-        print("Input tidak valid. Harus berupa angka.")
-        return
-
-    ulang = inquirer.prompt([
-        inquirer.List("ulang", message="Hapus game lain?", choices=["Ya", "Tidak"])
-    ])["ulang"]
-    if ulang == "Ya":
-        os.system('cls')
-        hapus_game()
+            print("Penghapusan dibatalkan.")
     else:
-        os.system('cls')
-        print("Kembali ke menu utama.")
+        print("ID game tidak ditemukan.")
