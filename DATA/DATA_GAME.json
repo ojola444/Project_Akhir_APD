@@ -46,5 +46,16 @@
         ],
         "total_terjual": 0,
         "total_pendapatan": 0
+    },
+    "A005": {
+        "judul_game": "left4dead2",
+        "tahun_rilis": "2012-12-12",
+        "harga": 120000,
+        "genre": [
+            "horror",
+            "multiplayer"
+        ],
+        "total_terjual": 0,
+        "total_pendapatan": 0
     }
 }
