@@ -2,6 +2,15 @@ import datetime
 import json
 import inquirer
 from pathlib import Path
+import sys
+
+lokasi = Path(__file__).resolve()
+folderFile = lokasi.parent
+folderMain = folderFile.parent
+
+sys.path.append(str(folderMain))
+
+from INPUT_HANDLING import input_number_handling, input_string_handling
 
 def tambah_game():
     lokasiFile = Path(__file__).resolve()
@@ -15,28 +24,35 @@ def tambah_game():
 
     try :
      Nama_game = input("masukkan nama Game :")
+     input_string_handling(Nama_game)
+
      for key in game:
          if Nama_game in game[key]["judul_game"] :
             checkDup += 1
+
      if checkDup > 0 :
         raise ValueError("game sudah ada")
+     
     except ValueError as err :
-       print(err)
+       print(f"input error : {err}")
        return
 
     tanggal = input("tanggal rilis (yyyy-mm-dd) : ") 
     try :
      harga = int(input("masukkan harga : "))
-    except ValueError :
-       print("harga hanya perlu angka")
+     input_number_handling(harga)
+    except ValueError as e:
+       print(f"input error : {e}")
        return
        
     genre = input("masukkan genre : ")
     
     list_genre = genre.split(",")
-    
-    if len(list_genre[-1]) < 1 :
-       del list_genre[-1]
+    list_genre = [item for item in list_genre if item and not item.isspace()]
+    if len(list_genre)< 1 :
+       print("genre tidak boleh kosong")
+       return
+
     
     gameBaru = {
        "judul_game" : Nama_game,
@@ -69,3 +85,5 @@ def tambah_game():
 
     elif pilihan == "2" :
        return "keluar dari fitur tambah game"
+    
+tambah_game()
