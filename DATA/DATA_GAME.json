@@ -8,8 +8,8 @@
             "Fantasy",
             "Open World"
         ],
-        "total_terjual": 0,
-        "total_pendapatan": 0
+        "total_terjual": 1,
+        "total_pendapatan": 599000
     },
     "A002": {
         "judul_game": "Tekken 8",
@@ -20,20 +20,10 @@
             "Action",
             "Multiplayer"
         ],
-        "total_terjual": 0,
-        "total_pendapatan": 0
+        "total_terjual": 3,
+        "total_pendapatan": 1797000
     },
     "A003": {
-        "judul_game": "CS 2",
-        "tahun_rilis": "2000",
-        "harga": 200000,
-        "genre": [
-            "FPS"
-        ],
-        "total_terjual": 0,
-        "total_pendapatan": 0
-    },
-    "A004": {
         "judul_game": "GTA 6",
         "tahun_rilis": "2026-10-26",
         "harga": 90000,
