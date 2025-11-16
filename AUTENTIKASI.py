@@ -3,6 +3,8 @@ from MENU import menu_crud_admin,menu_user
 import json
 from pathlib import Path
 
+from INPUT_HANDLING import input_number_handling, input_string_handling
+
 list_akun_admin = [
     {
     "username":"Rafi",
@@ -49,6 +51,11 @@ def cek_username(data_username):
     
     
     username = input("Buat Username Anda")
+    try :
+        input_string_handling(username)
+    except ValueError as e :
+        print(f"input error : {e}")
+        
     for key,value in data_username.items():
         print(value["username"])
         if username == value["username"]:
@@ -94,6 +101,12 @@ def user_regist():
     
     username = cek_username(data_user) 
     password = input("Buat PAssword Anda: ")
+    
+    try :
+        input_string_handling(password)
+    except ValueError as e :
+        print(f"input error : {e}")
+
     pin_user = buat_pin("Buat PIN anda 4-6 Digit: ")
     saldo = 0
     koleksi_game = []
