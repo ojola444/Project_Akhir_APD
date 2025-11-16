@@ -8,22 +8,10 @@
             "Fantasy",
             "Open World"
         ],
-        "total_terjual": 0,
-        "total_pendapatan": 0
+        "total_terjual": 1,
+        "total_pendapatan": 599000
     },
     "A002": {
-        "judul_game": "NieR:automata",
-        "tahun_rilis": "2017-03-17",
-        "harga": 579000,
-        "genre": [
-            "JRPG",
-            "Sci-Fi",
-            "Open World"
-        ],
-        "total_terjual": 0,
-        "total_pendapatan": 0
-    },
-    "A003": {
         "judul_game": "Tekken 8",
         "tahun_rilis": "2024-01-26",
         "harga": 599000,
@@ -32,17 +20,17 @@
             "Action",
             "Multiplayer"
         ],
-        "total_terjual": 0,
-        "total_pendapatan": 0
+        "total_terjual": 3,
+        "total_pendapatan": 1797000
     },
-    "A004": {
-        "judul_game": "Resident Evil 4",
-        "tahun_rilis": "2023-03-24",
-        "harga": 519000,
+    "A003": {
+        "judul_game": "GTA 6",
+        "tahun_rilis": "2026-10-26",
+        "harga": 90000,
         "genre": [
-            "Action",
-            "Horror",
-            "Survival"
+            "Open World",
+            " asd",
+            " asd"
         ],
         "total_terjual": 0,
         "total_pendapatan": 0

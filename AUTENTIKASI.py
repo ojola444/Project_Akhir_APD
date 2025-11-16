@@ -109,7 +109,7 @@ def user_regist():
 
     pin_user = buat_pin("Buat PIN anda 4-6 Digit: ")
     saldo = 0
-    koleksi_game = 0
+    koleksi_game = []
     
     user_baru = {
         "username": username,

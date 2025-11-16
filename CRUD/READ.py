@@ -2,8 +2,10 @@ import json
 from prettytable import PrettyTable
 from pathlib import Path
 import math
+import os
 
 def tampilkan_game():
+   
    lokasiFile = Path(__file__).resolve()
    folderSekarang = lokasiFile.parent
    folderUtama = folderSekarang.parent
@@ -20,4 +22,7 @@ def tampilkan_game():
 
       table.add_row([i, id["judul_game"], id["tahun_rilis"], id["harga"], id["genre"], id["total_terjual"], id["total_pendapatan"] ])
       
-      print(table)
+   print(table)
+   
+   kembali = input("Tekan Enter Untuk Kembali: ")
+   
