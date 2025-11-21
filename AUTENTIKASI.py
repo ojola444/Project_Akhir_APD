@@ -28,8 +28,8 @@ def admin_login():
     percobaan = 0 
 
     while percobaan < max_percobaan:
-        username = input("Masukkan username: ")
-        password = input("Masukkan password: ")
+        username = input_string_handling("Masukkan username")
+        password = input_string_handling("Masukkan password")
 
         for akun in list_akun_admin:
             if username == akun["username"] and password == akun["password"]:
@@ -69,16 +69,14 @@ def cek_username(data_username):
 def buat_pin(input_message):
     while True:
         
-        try:
-            pin = input(input_message)
-            if len(pin) >= 4 and len(pin) <= 6:
-                return int(pin)
-            else:
-                raise ValueError
+        
+        pin = input_number_handling(input_message)
+        if len(str(pin)) >= 4 and len(str(pin)) <= 6:
+            return pin
+        else:
+            print("Pin harus berjumlah 4-6 Digit!")
             
-        except ValueError:
-            print("Masukan Angka 4-6 Digit!!")
-            continue
+        
             
         
 
@@ -98,7 +96,7 @@ def user_regist():
 
     pin_user = buat_pin("Buat PIN anda 4-6 Digit: ")
     saldo = 0
-    koleksi_game = 0
+    koleksi_game = []
     
     user_baru = {
         "username": username,
@@ -133,8 +131,8 @@ def user_login():
     percobaan = 0
     max_percobaan = 5
     while percobaan < max_percobaan:
-        username = input("Masukkan username: ")
-        password = input("Masukkan password: ")
+        username = input_string_handling("Masukkan username: ")
+        password = input_string_handling("Masukkan password: ")
 
         for id,akun in data_user.items():
             if username == akun["username"] and password == akun["password"]:

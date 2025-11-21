@@ -52,16 +52,20 @@ def menu_crud_admin():
 
         match menu_dipilih:
             case "1. Tambah Game (Create)":
+                os.system("cls || clear")
                 tambah_game()
                 
             case "2. Tampilkan Data Game (Read)":
+                os.system("cls || clear")
                 tampilkan_game()
                 input("Input apa saja untuk kembali: ")
                 
             case "3. Ubah Data Game (Update)":
+                os.system("cls || clear")
                 ubah_data_game()
                 
             case "4. Hapus Data Game (Delete)":
+                os.system("cls || clear")
                 hapus_game()
                 
             case "5. Keluar":

@@ -18,6 +18,7 @@ def hapus_game():
             games = json.load(file)
     except FileNotFoundError:
         print("File DATA_GAME.json tidak ditemukan.")
+        
         return
 
     if len(games) == 0:
@@ -56,4 +57,6 @@ def hapus_game():
         else:
             print("Penghapusan dibatalkan.")
     else:
-        print("ID game tidak ditemukan.")
+        os.system('cls')
+        print("\n===> ID game tidak ditemukan, Silahkan Input Ulang\n")
+        hapus_game()

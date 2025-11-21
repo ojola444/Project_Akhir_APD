@@ -35,24 +35,13 @@
         "total_terjual": 0,
         "total_pendapatan": 0
     },
-    "A005": {
-        "judul_game": "GTA 2077",
-        "tahun_rilis": "",
-        "harga": 900000,
+    "A004": {
+        "judul_game": "Harvest Moon: Back To Nature",
+        "tahun_rilis": "1999-12-19",
+        "harga": 199000,
         "genre": [
-            "MULTIPLAYER"
-        ],
-        "total_terjual": 0,
-        "total_pendapatan": 0
-    },
-    "A006": {
-        "judul_game": "LEFT4DEAD 2",
-        "tahun_rilis": "2020-10-10",
-        "harga": 300000,
-        "genre": [
-            "Horror",
-            "Multiplayer",
-            "Shooting"
+            "Farm",
+            "Story Mode"
         ],
         "total_terjual": 0,
         "total_pendapatan": 0

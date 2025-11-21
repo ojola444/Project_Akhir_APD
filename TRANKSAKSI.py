@@ -4,6 +4,7 @@ from pathlib import Path
 from CRUD.READ import tampilkan_game
 import inquirer
 
+from INPUT_HANDLING import input_number_handling, input_string_handling
 
 
 def beli_game(id_akun_saat_ini):
@@ -17,7 +18,6 @@ def beli_game(id_akun_saat_ini):
         
     
     user = data_user[id_akun_saat_ini]
-    print(user)
     saldo_user = user["saldo"]
     koleksi_game_user = user["koleksi_game"]
         
@@ -28,12 +28,11 @@ def beli_game(id_akun_saat_ini):
         
     tampilkan_game()
     
-    pilih_game = input("Masukan Judul Game yang ingin dibeli: ")
+    pilih_game = input_string_handling("Masukan Judul Game yang ingin dibeli")
     
     
     for id,game in data_game.items():
-        print(game["judul_game"].upper())
-        print(pilih_game.upper())
+
         if game["judul_game"].upper() == pilih_game.upper():
             
             judul_game = game["judul_game"]
@@ -65,7 +64,7 @@ def beli_game(id_akun_saat_ini):
                         while True:
                             saldo_user-= harga_game 
                             
-                            print(saldo_user)
+                            
 
                             if saldo_user < 0:
                                 pilih_menu = [inquirer.List(
@@ -150,7 +149,7 @@ def top_up(id_akun_saat_ini):
     
     print("=================== MENU TOP UP ===================\n")
     
-    nominal = int(input("Masukan Nominal Top Up: "))
+    nominal = input_number_handling("Masukan Nominal Top Up")
     
     
     
@@ -159,7 +158,7 @@ def top_up(id_akun_saat_ini):
      
     percobaan = 0
     while True:
-        pin = int(input("Masukan PIN anda: "))
+        pin = input_number_handling("Masukan PIN anda: ")
         if pin == akun_saat_ini["PIN"]:
             saldo_akun += nominal
             

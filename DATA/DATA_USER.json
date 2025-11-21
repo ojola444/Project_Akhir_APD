@@ -29,5 +29,19 @@
             "Tekken 8",
             "Elden Ring"
         ]
+    },
+    "U005": {
+        "username": "Kills",
+        "password": "ki123",
+        "PIN": 404505,
+        "saldo": 0,
+        "koleksi_game": []
+    },
+    "U006": {
+        "username": "Dummy",
+        "password": "user123",
+        "PIN": 40405,
+        "saldo": 0,
+        "koleksi_game": []
     }
 }

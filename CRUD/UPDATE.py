@@ -80,4 +80,6 @@ def ubah_data_game():
         else:
             print("Perubahan dibatalkan.")
     else:
-        print("ID game tidak ditemukan.")
+        os.system('cls')
+        print("\n===> ID game tidak ditemukan, Silahkan Input Ulang\n")
+        ubah_data_game()
