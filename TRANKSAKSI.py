@@ -8,6 +8,7 @@ from INPUT_HANDLING import input_number_handling, input_string_handling
 
 
 def beli_game(id_akun_saat_ini):
+    
     lokasiFile = Path(__file__).resolve()
     folderSekarang = lokasiFile.parent
     path_user_json = folderSekarang / "DATA" / "DATA_USER.json"
@@ -133,8 +134,7 @@ def beli_game(id_akun_saat_ini):
                     case "2. Kembali ke Menu":
                         break
         
-        else:
-            print("Game tidak ditemukan")
+        
         
 
 def top_up(id_akun_saat_ini):

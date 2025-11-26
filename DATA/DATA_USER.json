@@ -1,33 +1,37 @@
 {
     "U001": {
         "username": "contoh",
-        "password": "123",
+        "password": "a123",
         "PIN": 202024,
         "saldo": 0,
         "koleksi_game": []
     },
     "U002": {
         "username": "contoh2",
-        "password": "123",
+        "password": "b123",
         "PIN": 202024,
         "saldo": 0,
         "koleksi_game": []
     },
     "U003": {
         "username": "contoh3",
-        "password": "123",
+        "password": "c123",
         "PIN": 202024,
         "saldo": 0,
         "koleksi_game": []
     },
     "U004": {
         "username": "Raafx",
-        "password": "ydj4d467",
+        "password": "r467",
         "PIN": 40607,
-        "saldo": 2000,
+        "saldo": 7706190,
         "koleksi_game": [
             "Tekken 8",
-            "Elden Ring"
+            "Elden Ring",
+            "Harvest Moon: Back To Nature",
+            "Half Life 2",
+            "Final Fantasy VII",
+            "Left 4 Dead"
         ]
     },
     "U005": {
@@ -41,7 +45,19 @@
         "username": "Dummy",
         "password": "user123",
         "PIN": 40405,
-        "saldo": 0,
-        "koleksi_game": []
+        "saldo": 8910000,
+        "koleksi_game": [
+            "GTA 6"
+        ]
+    },
+    "U007": {
+        "username": "contoh4",
+        "password": "asd123",
+        "PIN": 2202,
+        "saldo": 10902000,
+        "koleksi_game": [
+            "Elden Ring",
+            "Tekken 8"
+        ]
     }
 }

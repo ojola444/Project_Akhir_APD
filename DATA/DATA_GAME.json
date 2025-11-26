@@ -8,8 +8,8 @@
             "Fantasy",
             "Open World"
         ],
-        "total_terjual": 1,
-        "total_pendapatan": 599000
+        "total_terjual": 2,
+        "total_pendapatan": 1198000
     },
     "A002": {
         "judul_game": "Tekken 8",
@@ -20,8 +20,8 @@
             "Action",
             "Multiplayer"
         ],
-        "total_terjual": 3,
-        "total_pendapatan": 1797000
+        "total_terjual": 4,
+        "total_pendapatan": 2396000
     },
     "A003": {
         "judul_game": "GTA 6",
@@ -29,11 +29,10 @@
         "harga": 90000,
         "genre": [
             "Open World",
-            " asd",
-            " asd"
+            "Gangster"
         ],
-        "total_terjual": 0,
-        "total_pendapatan": 0
+        "total_terjual": 1,
+        "total_pendapatan": 90000
     },
     "A004": {
         "judul_game": "Harvest Moon: Back To Nature",
@@ -43,7 +42,29 @@
             "Farm",
             "Story Mode"
         ],
-        "total_terjual": 0,
-        "total_pendapatan": 0
+        "total_terjual": 1,
+        "total_pendapatan": 199000
+    },
+    "A005": {
+        "judul_game": "Tor Monitor Simulator",
+        "tahun_rilis": "2014-02-20",
+        "harga": 299000,
+        "genre": [
+            "Acik"
+        ],
+        "total_terjual": 2,
+        "total_pendapatan": 598000
+    },
+    "A006": {
+        "judul_game": "Final Fantasy VII",
+        "tahun_rilis": "2022-02-13",
+        "harga": 699000,
+        "genre": [
+            "RPG",
+            "Action",
+            "Adventure"
+        ],
+        "total_terjual": 1,
+        "total_pendapatan": 699000
     }
 }

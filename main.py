@@ -27,7 +27,7 @@ if __name__ == "__main__":
                         user_regist()
         
                     case "3. Kembali":
-                        break
+                        continue
             
 
             case "3. Keluar":
