@@ -38,8 +38,11 @@
         "username": "Kills",
         "password": "ki123",
         "PIN": 404505,
-        "saldo": 10000,
-        "koleksi_game": []
+        "saldo": 72000,
+        "koleksi_game": [
+            "Miside",
+            "Growtopia"
+        ]
     },
     "U006": {
         "username": "Dummy",
