@@ -62,7 +62,6 @@ def beli_game(id_akun_saat_ini):
             if id in koleksi_game_user:
                 os.system("cls || clear")
                 print(f"\nAnda sudah memiliki Game {judul_game}, silahkan beli game yang lain\n")
-                beli_game(id_akun_saat_ini)
                 break
             else:
                 

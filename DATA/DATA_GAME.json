@@ -43,8 +43,8 @@
             "Action",
             "Adventure"
         ],
-        "total_terjual": 1,
-        "total_pendapatan": 699000
+        "total_terjual": 2,
+        "total_pendapatan": 1398000
     },
     "A008": {
         "judul_game": "Miside",
@@ -67,8 +67,8 @@
             "Simulasi",
             "Music"
         ],
-        "total_terjual": 1,
-        "total_pendapatan": 59000
+        "total_terjual": 2,
+        "total_pendapatan": 88000
     },
     "A011": {
         "judul_game": "BrawlHalla",
@@ -79,8 +79,8 @@
             "Multiplayer",
             "Competitif"
         ],
-        "total_terjual": 1,
-        "total_pendapatan": 12000
+        "total_terjual": 2,
+        "total_pendapatan": 24000
     },
     "A012": {
         "judul_game": "Doom",
@@ -90,8 +90,8 @@
             "FPS",
             "Action"
         ],
-        "total_terjual": 0,
-        "total_pendapatan": 0
+        "total_terjual": 4,
+        "total_pendapatan": 396000
     },
     "A013": {
         "judul_game": "Terraria",
@@ -113,7 +113,7 @@
             "Sandbox",
             "Survival"
         ],
-        "total_terjual": 1,
-        "total_pendapatan": 199000
+        "total_terjual": 3,
+        "total_pendapatan": 597000
     }
 }

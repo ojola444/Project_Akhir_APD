@@ -101,7 +101,7 @@ def menu_user(akun_saat_ini,username):
             case "1. Beli Game":
                 os.system("cls || clear")
                 beli_game(akun_saat_ini)
-                input("Tekan enter untuk kembali: ")
+                
                 
             case "2. Top Up":
                 os.system("cls || clear")

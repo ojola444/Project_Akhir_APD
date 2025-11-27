@@ -22,7 +22,7 @@ def tampilkan_game():
       id = fileGame[i]
       tanggal = datetime.date.fromisoformat(id['tahun_rilis'])
 
-      table.add_row([i, id["judul_game"], tanggal, id["harga"], id["genre"], id["total_terjual"], id["total_pendapatan"] ])
+      table.add_row([i, id["judul_game"], tanggal, f"Rp. {id["harga"]:,}", ", ".join(map(str, id["genre"])), id["total_terjual"], f"Rp. {id["total_pendapatan"]:,}" ])
       
    print(table)
    

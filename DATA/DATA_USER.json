@@ -24,13 +24,16 @@
         "username": "Raafx",
         "password": "r467",
         "PIN": 40607,
-        "saldo": 6922190,
+        "saldo": 5993190,
         "koleksi_game": [
             "A002",
             "A008",
             "A014",
             "A013",
-            "A005"
+            "A005",
+            "A009",
+            "A012",
+            "A006"
         ]
     },
     "U005": {
@@ -78,8 +81,31 @@
         "username": "Faax",
         "password": "Zores",
         "PIN": 90908,
-        "saldo": 0,
+        "saldo": 99902000,
         "keranjang": [],
-        "koleksi_game": []
+        "koleksi_game": [
+            "A012"
+        ]
+    },
+    "U011": {
+        "username": "Vahmpp",
+        "password": "f009",
+        "PIN": 5566,
+        "saldo": 702000,
+        "keranjang": [],
+        "koleksi_game": [
+            "A012",
+            "A014"
+        ]
+    },
+    "U012": {
+        "username": null,
+        "password": "R404",
+        "PIN": 4044,
+        "saldo": 1000,
+        "keranjang": [],
+        "koleksi_game": [
+            "A014"
+        ]
     }
 }

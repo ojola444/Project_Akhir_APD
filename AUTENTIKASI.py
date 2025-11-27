@@ -20,7 +20,7 @@ list_akun_admin = [
     },
     {
     "username":"Ozora",
-    "password":"admin034"
+    "password":"admin038"
     }
                    ]
 
@@ -31,7 +31,7 @@ def admin_login():
     max_percobaan = 5 
 
     percobaan = 0 
-    print("======== Silahkan Masukan Usernam dan Passowrd yang sesuai ========\n")
+    print("======== Silahkan Masukan Username dan Password yang sesuai ========\n")
     while percobaan < max_percobaan:
         username = input_string_handling("Masukkan username")
         password = input_string_handling("Masukkan password")
@@ -149,7 +149,7 @@ def user_regist():
 def user_login():
     os.system("cls || clear")
     
-    print("======== Silahkan Masukan Usernam dan Passowrd yang sesuai ========\n")
+    print("======== Silahkan Masukan Username dan Password yang sesuai ========\n")
     lokasiFile = Path(__file__).resolve()
     folderSekarang = lokasiFile.parent
     path_json = folderSekarang / "DATA" / "DATA_USER.json"
