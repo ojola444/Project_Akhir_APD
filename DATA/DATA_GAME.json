@@ -34,7 +34,7 @@
         "total_terjual": 1,
         "total_pendapatan": 90000
     },
-    "A004": {
+    "A005": {
         "judul_game": "Harvest Moon: Back To Nature",
         "tahun_rilis": "1999-12-19",
         "harga": 199000,
@@ -45,16 +45,7 @@
         "total_terjual": 1,
         "total_pendapatan": 199000
     },
-    "A005": {
-        "judul_game": "Tor Monitor Simulator",
-        "tahun_rilis": "2014-02-20",
-        "harga": 299000,
-        "genre": [
-            "Acik"
-        ],
-        "total_terjual": 2,
-        "total_pendapatan": 598000
-    },
+    
     "A006": {
         "judul_game": "Final Fantasy VII",
         "tahun_rilis": "2022-02-13",
