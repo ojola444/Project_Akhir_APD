@@ -29,11 +29,11 @@ def menu_multi_login():
     
     
 
-def menu_crud_admin():
+def menu_crud_admin(username):
     while True:
         os.system("cls || clear")
-        print("========= KUKUSTATION: JUAL BELI GAME ===========\n")
-        print("Anda Login sebagai Admin, Silahkan pilih menu dibawah:")
+        print("============== KUKUSTATION: JUAL BELI GAME ==============\n")
+        print(f"Selamat datang Admin {username}, Silahkan pilih menu dibawah:")
         print("\n======================================================")
 
         pilih_menu = [inquirer.List(
@@ -77,12 +77,13 @@ def menu_crud_admin():
     
     
 
-def menu_user(akun_saat_ini):
+def menu_user(akun_saat_ini,username):
     
     while True:
         os.system("cls || clear")
         print("========= KUKUSTATION: JUAL BELI GAME ===========\n")
-        print("Anda Login sebagai User, Silahkan pilih menu dibawah:")
+        print(f"Selamat Datang {username}, Silahkan pilih menu dibawah:\n")
+        print("======================================================\n")
         pilih_menu = [inquirer.List(
                 "Menu",
                 message="Pilih Menu",
@@ -95,7 +96,7 @@ def menu_user(akun_saat_ini):
                 )
             ]
         menu_dipilih = inquirer.prompt(pilih_menu)["Menu"]
-        print("======================================================\n")
+        
         match menu_dipilih:
             case "1. Beli Game":
                 os.system("cls || clear")

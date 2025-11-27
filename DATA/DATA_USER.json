@@ -53,5 +53,29 @@
         "PIN": 2202,
         "saldo": 10902000,
         "koleksi_game": []
+    },
+    "U008": {
+        "username": null,
+        "password": "f990",
+        "PIN": 9093,
+        "saldo": 0,
+        "keranjang": [],
+        "koleksi_game": []
+    },
+    "U009": {
+        "username": "Roxen",
+        "password": "useroo0",
+        "PIN": 9094,
+        "saldo": 0,
+        "keranjang": [],
+        "koleksi_game": []
+    },
+    "U010": {
+        "username": "Faax",
+        "password": "Zores",
+        "PIN": 90908,
+        "saldo": 0,
+        "keranjang": [],
+        "koleksi_game": []
     }
 }
