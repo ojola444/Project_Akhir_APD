@@ -20,8 +20,8 @@
             "Action",
             "Multiplayer"
         ],
-        "total_terjual": 7,
-        "total_pendapatan": 4193000
+        "total_terjual": 9,
+        "total_pendapatan": 5391000
     },
     "A003": {
         "judul_game": "Minecraft Movie",
@@ -45,7 +45,6 @@
         "total_terjual": 1,
         "total_pendapatan": 199000
     },
-    
     "A006": {
         "judul_game": "Final Fantasy VII",
         "tahun_rilis": "2022-02-13",
@@ -67,8 +66,8 @@
             "Indie",
             "Single player"
         ],
-        "total_terjual": 1,
-        "total_pendapatan": 109000
+        "total_terjual": 2,
+        "total_pendapatan": 218000
     },
     "A009": {
         "judul_game": "Geometry Dash",

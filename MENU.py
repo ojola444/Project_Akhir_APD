@@ -10,6 +10,7 @@ from TRANKSAKSI import beli_game,top_up
 
 
 
+
 def menu_multi_login():
     os.system("cls || clear")
     print("================(Selamat Datang di KukuStation)================\n")
@@ -58,7 +59,7 @@ def menu_crud_admin():
             case "2. Tampilkan Data Game (Read)":
                 os.system("cls || clear")
                 tampilkan_game()
-                input("Input apa saja untuk kembali: ")
+                input("Tekan enter untuk kembali: ")
                 
             case "3. Ubah Data Game (Update)":
                 os.system("cls || clear")
@@ -87,8 +88,8 @@ def menu_user(akun_saat_ini):
                 message="Pilih Menu",
                 choices=[
                     "1. Beli Game",
-                    "2. Info Akun",
-                    "3. Top Up",
+                    "2. Top Up",
+                    "3. Info Akun",
                     "4. Log Out",
                     ]
                 )
@@ -99,15 +100,17 @@ def menu_user(akun_saat_ini):
             case "1. Beli Game":
                 os.system("cls || clear")
                 beli_game(akun_saat_ini)
+                input("Tekan enter untuk kembali: ")
                 
-            case "2. Info Akun":
-                os.system("cls || clear")
-                tampilkan_info_akun(akun_saat_ini)
-                input("Input apa saja untuk kembali: ")
-            
-            case "3. Top Up":
+            case "2. Top Up":
                 os.system("cls || clear")
                 top_up(akun_saat_ini)
+                input("Tekan enter untuk kembali: ")
+                
+            case "3. Info Akun":
+                os.system("cls || clear")
+                tampilkan_info_akun(akun_saat_ini)
+                input("Tekan enter untuk kembali: ")
                 
             case "4. Log Out":
                 break
